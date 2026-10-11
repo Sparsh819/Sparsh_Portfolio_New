@@ -1,0 +1,543 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sparsh Bandi Portfolio</title>
+<meta name="description" content="Sparsh Bandi, IIT Madras: SRAD rocket avionics for Team Abhyuday at IREC, stealth and autonomous UAVs at the Aero Club, and computational aerodynamics. Case studies, PCB designs, CAD and resume.">
+<meta name="author" content="Sparsh Bandi">
+<meta name="theme-color" content="#07111F">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sparsh Bandi — Avionics &amp; Aerial Robotics">
+<meta property="og:description" content="Rocket avionics that flew at IREC, autonomous UAVs, and aerodynamic models checked against CFD.">
+<meta property="og:image" content="assets/img/abh2.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="preload" as="image" href="assets/img/hero-avionics-bay.webp">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Sparsh Bandi","jobTitle":"B.Tech student, Chemical Engineering","affiliation":{"@type":"CollegeOrUniversity","name":"Indian Institute of Technology Madras"},"email":"mailto:sparshbandi@gmail.com","sameAs":["https://github.com/Sparsh819","https://www.linkedin.com/in/sparsh-bandi-376046320/"],"knowsAbout":["Rocket avionics","Flight computer design","PCB design","UAV autonomy","Computational aerodynamics"]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" aria-hidden="true"><span></span></div>
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="nav__brand" href="#top" aria-label="Sparsh Bandi, back to top">
+      <span class="nav__mark">SB</span>
+      <span class="nav__name">Sparsh Bandi</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#work" data-nav="work">Work</a></li>
+        <li><a href="#experience" data-nav="experience">Experience</a></li>
+        <li><a href="#research" data-nav="research">Research</a></li>
+        <li><a href="#cad" data-nav="cad">CAD</a></li>
+        <li><a href="#skills" data-nav="skills">Skills</a></li>
+        <li><a href="#contact" data-nav="contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="btn btn--small nav__resume" type="button" data-resume="">Resume</button>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu" hidden="">
+    <ul>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#cad">CAD</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><button type="button" class="btn" data-resume="">View resume</button></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+<div id="home-view">
+
+  <!-- HERO -->
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="hero__grid" aria-hidden="true"></div>
+    <div class="wrap hero__inner">
+      <div class="hero__copy">
+        <p class="eyebrow hero__in" style="--d:0">IIT Madras · B.Tech Chemical Engineering · Class of 2028</p>
+        <h1 class="hero__title hero__in" id="hero-title" style="--d:1">Sparsh<br>Bandi</h1>
+        <p class="hero__tagline hero__in" style="--d:2">Aerospace and Aerial Robotics Enthusiast</p>
+        <p class="hero__lede hero__in" style="--d:3">I design flight hardware and the software that flies it: the avionics for Team Abhyuday’s rocket at IREC, autonomous and stealth UAVs at the Aero Club, and aerodynamic models checked against CFD.</p>
+        <div class="hero__cta hero__in" style="--d:4">
+          <a class="btn btn--primary" href="#work">Explore my work <span aria-hidden="true">↓</span></a>
+          <button class="btn" type="button" data-resume="">View resume</button>
+        </div>
+      </div>
+      <figure class="hero__visual hero__in" style="--d:2" data-parallax="">
+        <div class="hero__photo" data-depth="10">
+          <img src="assets/img/hero-avionics-bay.webp" width="784" height="1180" alt="The integrated avionics bay of Team Abhyuday’s rocket at IREC, with stacked boards and wiring harness" fetchpriority="high">
+          <span class="anno anno--a" aria-hidden="true">AVIONICS BAY · IREC</span>
+        </div>
+        <button class="hero__pcb" type="button" data-depth="22" data-open="pcb3d" aria-label="Enlarge the flight-computer PCB render">
+          <img src="assets/img/pcb3d-sm.webp" width="900" height="584" alt="3D render of the STM32H7 flight-computer PCB">
+          <span class="anno anno--b" aria-hidden="true">PCB-01 · STM32H7 · 4 LAYERS</span>
+        </button>
+        <figcaption class="sr-only">Avionics bay photographed at IREC, and the flight-computer PCB render.</figcaption>
+      </figure>
+    </div>
+    <div class="wrap">
+      <dl class="telemetry hero__in" style="--d:5" aria-label="Key figures">
+        <div><dt>Launch altitude</dt><dd>8,000<small> ft AGL</small></dd></div>
+        <div><dt>Hybrid hot-fire</dt><dd>3.3<small> kN peak</small></dd></div>
+        <div><dt>Patents filed</dt><dd>2<small> UAV interception</small></dd></div>
+        <div><dt>USB model vs CFD</dt><dd>0.5<small> % error</small></dd></div>
+      </dl>
+    </div>
+    <a class="scroll-cue" href="#about" aria-label="Scroll to About"><span></span></a>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about" aria-labelledby="about-title">
+    <div class="wrap about__grid">
+      <div class="section-head" data-reveal="">
+        <p class="eyebrow">About</p>
+        <h2 id="about-title">A chemical engineer who builds things that fly.</h2>
+      </div>
+      <div class="about__body" data-reveal="">
+        <p>I study Chemical Engineering at IIT Madras, and most of my engineering happens in hardware labs and on launch sites. I was the only avionics member in Team Abhyuday’s IREC delegation, coordinated the Aero Club through a national competition season, and spent a summer on vision and guidance for autonomous UAV tracking.</p>
+        <p>I like owning a system end to end: choosing components, laying out the board, writing the firmware, and then finding out on the pad whether the redundancy was worth it. It was — on our IREC flight, the backup channel on my flight computer fired the drogue when the primary charge failed.</p>
+        <dl class="facts">
+          <div><dt>Based at</dt><dd>IIT Madras, Chennai <span class="coord">12.99° N 80.23° E</span></dd></div>
+          <div><dt>Focus</dt><dd>Avionics · embedded systems · UAV autonomy · aerodynamics</dd></div>
+          <div><dt>Licence</dt><dd>FCC Amateur Radio Technician, by examination</dd></div>
+          <div><dt>Available</dt><dd>Internships, Spring and Summer 2027</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED: ABHYUDAY -->
+  <section class="section feature" id="work" aria-labelledby="feature-title">
+    <div class="wrap">
+      <div class="section-head section-head--row" data-reveal="">
+        <div>
+          <p class="eyebrow">Featured case study · Rocketry &amp; avionics</p>
+          <h2 id="feature-title">Team Abhyuday — SRAD avionics at IREC</h2>
+        </div>
+        <span class="status status--ongoing">Ongoing · Sep 2025 – present</span>
+      </div>
+      <div class="feature__intro" data-reveal="">
+        <p class="lede">Flight computer, telemetry, power and ground station for a 10,000 ft COTS-category rocket, flown in a field of 143 teams.</p>
+        <a class="link-arrow" href="#case-abhyuday">Read the case study <span aria-hidden="true">→</span></a>
+      </div>
+      <div id="abhyuday-grid"><div class="evidence" role="group" aria-label="Abhyuday photographs and PCB images">
+      <figure class="evidence__top">
+      <button type="button" class="frame frame--photo" data-open="abh1" data-group="feature" aria-label="Enlarge image: Team Abhyuday at IREC, USA: the delegation on stage, launch-site preparation, and the rocket at the pad.">
+        <img src="assets/img/abh1.webp" srcset="assets/img/abh1.webp 899w" sizes="(max-width: 700px) 100vw, 50vw" width="899" height="1599" alt="Team Abhyuday at IREC, USA: the delegation on stage, launch-site preparation, and the rocket at the pad." loading="lazy" decoding="async"><span class="frame__zoom" aria-hidden="true">ENLARGE ⤢</span>
+      </button>
+      <figcaption>Team Abhyuday at IREC, USA: the delegation on stage, launch-site preparation, and the rocket at the pad.</figcaption>
+    </figure><figure class="evidence__top">
+      <button type="button" class="frame frame--photo" data-open="abh2" data-group="feature" aria-label="Enlarge image: The delegation with the rocket (left) and the integrated avionics bay with its wiring harness (right).">
+        <img src="assets/img/abh2-sm.webp" srcset="assets/img/abh2-sm.webp 900w, assets/img/abh2.webp 1599w" sizes="(max-width: 700px) 100vw, 50vw" width="900" height="675" alt="The delegation with the rocket (left) and the integrated avionics bay with its wiring harness (right)." loading="lazy" decoding="async"><span class="frame__zoom" aria-hidden="true">ENLARGE ⤢</span>
+      </button>
+      <figcaption>The delegation with the rocket (left) and the integrated avionics bay with its wiring harness (right).</figcaption>
+    </figure>
+      <figure class="evidence__bottom">
+      <button type="button" class="frame frame--pcb" data-open="pcb3d" data-group="feature" aria-label="Enlarge image: 3D render of the 4-layer STM32H7 flight-computer board, as designed.">
+        <span class="frame__label">PCB-01 · 3D RENDER</span><img src="assets/img/pcb3d-sm.webp" srcset="assets/img/pcb3d-sm.webp 900w, assets/img/pcb3d.png 1050w" sizes="(max-width: 700px) 100vw, 50vw" width="900" height="584" alt="3D render of the 4-layer STM32H7 flight-computer board, as designed." loading="lazy" decoding="async"><span class="frame__zoom" aria-hidden="true">ENLARGE ⤢</span>
+      </button>
+      <figcaption><b>PCB-01</b>3D render of the 4-layer STM32H7 flight-computer board, as designed.</figcaption>
+    </figure><figure class="evidence__bottom">
+      <button type="button" class="frame frame--pcb" data-open="schem" data-group="feature" aria-label="Enlarge image: CHILE-V1 flight-computer schematic, full sheet.">
+        <span class="frame__label">SCH-01 · CHILE-V1</span><img src="assets/img/schem-sm.webp" srcset="assets/img/schem-sm.webp 900w, assets/img/schem.png 1186w" sizes="(max-width: 700px) 100vw, 50vw" width="900" height="644" alt="CHILE-V1 flight-computer schematic, full sheet." loading="lazy" decoding="async"><span class="frame__zoom" aria-hidden="true">ENLARGE ⤢</span>
+      </button>
+      <figcaption><b>SCH-01</b>CHILE-V1 flight-computer schematic, full sheet.</figcaption>
+    </figure>
+    </div></div>
+      <dl class="metrics" id="feature-metrics" data-reveal=""><div><dt>AGL — team’s launch at IREC, USA</dt><dd>8,000 ft</dd></div><div><dt>Peak thrust, hybrid hot-fire (4.5 s burn)</dt><dd>3.3 kN</dd></div><div><dt>Bidirectional LoRa telemetry link</dt><dd>7 km</dd></div><div><dt>Teams in the IREC field</dt><dd>143</dd></div></dl>
+    </div>
+  </section>
+
+  <!-- PROJECT INDEX -->
+  <section class="section index" id="projects" aria-labelledby="index-title">
+    <div class="wrap">
+      <div class="section-head section-head--row" data-reveal="">
+        <div>
+          <p class="eyebrow">Project index</p>
+          <h2 id="index-title">Everything else I’ve built and studied</h2>
+        </div>
+        <div class="filters" role="group" aria-label="Filter projects by discipline" id="filters"><button type="button" data-filter="all" aria-pressed="true">All work<span>8</span></button><button type="button" data-filter="uav" aria-pressed="false">UAVs &amp; aircraft<span>3</span></button><button type="button" data-filter="research" aria-pressed="false">Research &amp; computation<span>3</span></button><button type="button" data-filter="competitions" aria-pressed="false">Competitions &amp; leadership<span>2</span></button></div>
+      </div>
+      <div class="cards" id="cards" aria-live="polite"><a class="card card--wide" href="#case-icarus" data-cats="uav">
+        <div class="card__media"><img src="assets/img/icarus-sm.webp" srcset="assets/img/icarus-sm.webp 900w, assets/img/icarus.webp 1440w" sizes="(max-width: 640px) 100vw, (max-width: 1000px) 50vw, 40vw" width="900" height="900" alt="Project Icarus Prime: Stealth STOL UAV for autonomous swarm defence" loading="lazy" decoding="async"></div>
+        <div class="card__body">
+          <div class="card__meta"><span>UAVs &amp; aircraft</span><span class="status  ">Completed</span></div>
+          <h3>Project Icarus Prime</h3>
+          <p>A short-take-off stealth UAV built around a NACA 9415 airfoil, with a YOLOv11 detector and geofenced ArduPilot autonomy. Two patents filed.</p>
+          <span class="card__go">Case study <span aria-hidden="true">→</span></span>
+        </div>
+      </a><a class="card card--wide" href="#case-lat" data-cats="research">
+        <div class="card__media"><img src="assets/img/latsim-sm.webp" srcset="assets/img/latsim-sm.webp 900w, assets/img/latsim.webp 1393w" sizes="(max-width: 640px) 100vw, (max-width: 1000px) 50vw, 40vw" width="900" height="561" alt="LAT Aerospace · Inter IIT: Upper-surface-blowing aerodynamics, matched to CFD" loading="lazy" decoding="async"></div>
+        <div class="card__body">
+          <div class="card__meta"><span>Research &amp; computation</span><span class="status  ">Completed</span></div>
+          <h3>LAT Aerospace · Inter IIT</h3>
+          <p>A 2D Python model of upper-surface blowing on the S1223 airfoil that matched CFD within 0.5% at about a hundredth of the compute.</p>
+          <span class="card__go">Case study <span aria-hidden="true">→</span></span>
+        </div>
+      </a><a class="card " href="#case-aeromodelling" data-cats="uav">
+        <div class="card__media"><img src="assets/img/boeing.webp" srcset="assets/img/boeing.webp 799w" sizes="(max-width: 640px) 100vw, (max-width: 1000px) 50vw, 40vw" width="799" height="1599" alt="Boeing National Aeromodelling: Payload-drop aircraft and the Aero Club build season" loading="lazy" decoding="async"></div>
+        <div class="card__body">
+          <div class="card__meta"><span>UAVs &amp; aircraft</span><span class="status  ">Completed</span></div>
+          <h3>Boeing National Aeromodelling</h3>
+          <p>Balsa airframes built to fly 30 seconds with maximum payload, then drop it in flight. Designed in Fusion 360 and CNC-machined.</p>
+          <span class="card__go">Case study <span aria-hidden="true">→</span></span>
+        </div>
+      </a><a class="card " href="#case-valkron" data-cats="uav">
+        <div class="card__media card__media--schematic" aria-hidden="true"><div><div class="card__big">30%</div><div class="card__bigl">Lower inference latency in the YOLO pipeline</div></div></div>
+        <div class="card__body">
+          <div class="card__meta"><span>UAVs &amp; aircraft</span><span class="status  ">Completed</span></div>
+          <h3>Valkron Dynamics</h3>
+          <p>Cut detection latency by 30% and wrote ROS2 guidance logic that ran across 50+ autonomous missions.</p>
+          <span class="card__go">Case study <span aria-hidden="true">→</span></span>
+        </div>
+      </a><a class="card " href="#case-pokerbots" data-cats="competitions">
+        <div class="card__media"><img src="assets/img/poker2.webp" srcset="assets/img/poker2.webp 719w" sizes="(max-width: 640px) 100vw, (max-width: 1000px) 50vw, 40vw" width="719" height="474" alt="IIT PokerBots: Runner-up, Jane Street-sponsored inter-IIT bot competition" loading="lazy" decoding="async"></div>
+        <div class="card__body">
+          <div class="card__meta"><span>Competitions &amp; leadership</span><span class="status  ">Completed</span></div>
+          <h3>IIT PokerBots</h3>
+          <p>A poker bot combining Vickrey auction theory, Monte Carlo equity estimation and adaptive opponent modelling.</p>
+          <span class="card__go">Case study <span aria-hidden="true">→</span></span>
+        </div>
+      </a><a class="card " href="#case-attitude" data-cats="research">
+        <div class="card__media card__media--schematic" aria-hidden="true"><div><div class="card__big">100 Hz</div><div class="card__bigl">Fusion rate</div></div></div>
+        <div class="card__body">
+          <div class="card__meta"><span>Research &amp; computation</span><span class="status  ">Completed</span></div>
+          <h3>Attitude Estimation</h3>
+          <p>A MATLAB estimator fusing gyro, accelerometer and magnetometer at 100 Hz, validated on a live Arduino IMU.</p>
+          <span class="card__go">Case study <span aria-hidden="true">→</span></span>
+        </div>
+      </a><a class="card " href="#case-dpca" data-cats="research">
+        <div class="card__media card__media--schematic" aria-hidden="true"><div><div class="card__big">15+</div><div class="card__bigl">Papers synthesised</div></div></div>
+        <div class="card__body">
+          <div class="card__meta"><span>Research &amp; computation</span><span class="status  ">Completed</span></div>
+          <h3>Dynamic PCA Paper</h3>
+          <p>A 5,500-word paper benchmarking Dynamic PCA against six other fault-detection methods, with a from-scratch Python implementation.</p>
+          <span class="card__go">Case study <span aria-hidden="true">→</span></span>
+        </div>
+      </a><a class="card " href="#case-ecell" data-cats="competitions">
+        <div class="card__media"><img src="assets/img/ecell-sm.webp" srcset="assets/img/ecell-sm.webp 900w, assets/img/ecell.webp 1440w" sizes="(max-width: 640px) 100vw, (max-width: 1000px) 50vw, 40vw" width="900" height="900" alt="E-Cell Startup Services: Associate Manager, Entrepreneurship Cell, IIT Madras" loading="lazy" decoding="async"></div>
+        <div class="card__body">
+          <div class="card__meta"><span>Competitions &amp; leadership</span><span class="status  ">Completed</span></div>
+          <h3>E-Cell Startup Services</h3>
+          <p>Co-created PitchFest and connected 1,500+ startups with IvyCap, T-Hub, India Accelerator and Atal Incubation Centre.</p>
+          <span class="card__go">Case study <span aria-hidden="true">→</span></span>
+        </div>
+      </a></div>
+      <p class="empty" id="cards-empty" hidden="">No projects in this category yet. <button type="button" class="link-btn" data-filter-reset="">Show all work</button></p>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section experience" id="experience" aria-labelledby="exp-title">
+    <div class="wrap exp__grid">
+      <div class="section-head" data-reveal="">
+        <p class="eyebrow">Experience &amp; involvement</p>
+        <h2 id="exp-title">Roles, in order</h2>
+      </div>
+      <ol class="timeline" id="timeline"><li>
+      <time>Sep 2025 – present</time>
+      <div><h3><a href="#case-abhyuday">Avionics &amp; Electronics</a></h3><p class="org">Team Abhyuday, IIT Madras</p><p>Sole avionics member of the IREC delegation: flight computer, telemetry, power, ground station; payload vertical lead.</p></div>
+    </li><li>
+      <time>Sep 2025 – Mar 2026</time>
+      <div><h3><a href="#case-aeromodelling">Coordinator</a></h3><p class="org">Aero Club, IIT Madras</p><p>Led build cycles for 7+ fixed-wing aircraft and 4+ quadcopters; represented IIT Madras at the Boeing national championship.</p></div>
+    </li><li>
+      <time>Jul – Aug 2025</time>
+      <div><h3><a href="#case-valkron">Research Intern</a></h3><p class="org">Valkron Dynamics</p><p>Real-time YOLO detection (30% lower latency) and PID guidance in ROS2 across 50+ autonomous missions.</p></div>
+    </li><li>
+      <time>Nov 2024 – Apr 2025</time>
+      <div><h3><a href="#case-ecell">Associate Manager, Startup Services</a></h3><p class="org">Entrepreneurship Cell, IIT Madras</p><p>Co-created PitchFest; 8 pan-India meetups; 1,500+ startups connected to incubators and investors.</p></div>
+    </li></ol>
+    </div>
+  </section>
+
+  <!-- RESEARCH (light band) -->
+  <section class="section research" id="research" aria-labelledby="research-title">
+    <div class="wrap">
+      <div class="section-head" data-reveal="">
+        <p class="eyebrow">Research &amp; technical work</p>
+        <h2 id="research-title">Models, estimators and a paper</h2>
+        <p class="section-sub">Each entry lists the problem, the method, what I did and what came out of it. All three are complete.</p>
+      </div>
+      <div class="research__list" id="research-list"><article class="r-item">
+      <div>
+        <h3>LAT Aerospace · Inter IIT</h3>
+        <p class="r-item__meta">Inter IIT Tech Meet 14.0, IIT Patna · problem statement by LAT Aerospace</p>
+        <span class="status  ">Completed</span>
+        <div><a class="link-arrow" href="#case-lat">Full write-up <span aria-hidden="true">→</span></a></div>
+      </div>
+      <dl>
+        <div><dt>Problem</dt><dd>LAT Aerospace’s Inter IIT problem asked for fast models of upper-surface-blowing (USB) lift augmentation. I built thick jet-flap interaction models and validated them against high-fidelity CFD.</dd></div>
+        <div><dt>Method</dt><dd><div class="flow"><span>S1223 geometry</span><i aria-hidden="true">→</i><span>Jet + Coanda model</span><i aria-hidden="true">→</i><span>6-parameter optimisation</span><i aria-hidden="true">→</i><span>CFD comparison</span><i aria-hidden="true">→</i><span>CL vs α sweeps</span></div></dd></div>
+        <div><dt>My role</dt><dd>Sole modeller in a 30-member IIT Madras team</dd></div>
+      </dl>
+      <div class="r-item__nums"><div><b>0.5%</b><span>Error against high-fidelity CFD</span></div><div><b>~100×</b><span>Lower compute time than CFD</span></div><div><b>4.5</b><span>CL max from coflow-jet analysis</span></div><div><b>50+</b><span>Angle-of-attack configurations</span></div></div>
+    </article><article class="r-item">
+      <div>
+        <h3>Attitude Estimation</h3>
+        <p class="r-item__meta">IIT Madras · Prof. Aravind Kumar</p>
+        <span class="status  ">Completed</span>
+        <div><a class="link-arrow" href="#case-attitude">Full write-up <span aria-hidden="true">→</span></a></div>
+      </div>
+      <dl>
+        <div><dt>Problem</dt><dd>A 9-DOF attitude estimator in MATLAB that fuses IMU data with a complementary filter and visualises roll, pitch and yaw in a cockpit-style display.</dd></div>
+        <div><dt>Method</dt><dd><div class="flow"><span>Gyro · 25 Hz LPF</span><i aria-hidden="true">→</i><span>Accel · 5 Hz LPF</span><i aria-hidden="true">→</i><span>Mag · 5 Hz LPF</span><i aria-hidden="true">→</i><span>Complementary filter · 100 Hz</span><i aria-hidden="true">→</i><span>Horizon · 30 fps</span></div></dd></div>
+        <div><dt>My role</dt><dd>Individual course project · highest grade</dd></div>
+      </dl>
+      <div class="r-item__nums"><div><b>100 Hz</b><span>Fusion rate</span></div><div><b>30 fps</b><span>Horizon and roll-pitch-yaw display</span></div><div><b>3</b><span>One-pole low-pass filters (5 / 5 / 25 Hz)</span></div></div>
+    </article><article class="r-item">
+      <div>
+        <h3>Dynamic PCA Paper</h3>
+        <p class="r-item__meta">IIT Madras · Prof. Kannan A</p>
+        <span class="status  ">Completed</span>
+        <div><a class="link-arrow" href="#case-dpca">Full write-up <span aria-hidden="true">→</span></a></div>
+      </div>
+      <dl>
+        <div><dt>Problem</dt><dd>A research paper on multivariate statistical process monitoring for chemical plants, written for Multivariate Data Analysis (CH5440).</dd></div>
+        <div><dt>Method</dt><dd>Synthesised 15+ papers on Dynamic PCA and process monitoring into a 5,500-word paper.</dd></div>
+        <div><dt>My role</dt><dd>Author</dd></div>
+      </dl>
+      <div class="r-item__nums"><div><b>15+</b><span>Papers synthesised</span></div><div><b>7</b><span>Methods benchmarked</span></div><div><b>53</b><span>Process variables</span></div><div><b>21</b><span>Fault scenarios</span></div></div>
+    </article></div>
+    </div>
+  </section>
+
+  <!-- CAD / 3D -->
+  <section class="section cad" id="cad" aria-labelledby="cad-title">
+    <div class="wrap cad__grid">
+      <div class="cad__copy" data-reveal="">
+        <p class="eyebrow">CAD · Fusion 360</p>
+        <h2 id="cad-title">Aero Club balsa aircraft, in 3D</h2>
+        <p>The real Fusion 360 export (binary STL, 80,643 facets), loaded on demand. Drag to orbit, scroll or pinch to zoom, or use the view buttons.</p>
+        <dl class="specs specs--compact">
+          <div><dt>Format</dt><dd>Binary STL</dd></div>
+          <div><dt>Facets</dt><dd>80,643</dd></div>
+          <div><dt>Tool</dt><dd>Fusion 360</dd></div>
+          <div><dt>Project</dt><dd><a href="#case-aeromodelling">Boeing aeromodelling</a></dd></div>
+        </dl>
+      </div>
+      <div class="viewer" id="viewer" data-reveal="">
+        <div class="viewer__stage" id="viewer-stage">
+          <img class="viewer__poster" src="assets/img/cad_iso.webp" width="1097" height="760" alt="Isometric render of the Aero Club balsa aircraft CAD model" loading="lazy">
+          <button class="btn btn--primary viewer__load" type="button" id="viewer-load">Load interactive model <small>2 MB</small></button>
+          <p class="viewer__msg" id="viewer-msg" role="status"></p>
+        </div>
+        <div class="viewer__bar" id="viewer-bar" hidden="">
+          <div class="seg" role="group" aria-label="Camera view">
+            <button type="button" data-view="iso" aria-pressed="true">3D</button>
+            <button type="button" data-view="top" aria-pressed="false">Top</button>
+            <button type="button" data-view="front" aria-pressed="false">Front</button>
+            <button type="button" data-view="side" aria-pressed="false">Side</button>
+          </div>
+          <div class="seg" role="group" aria-label="Display">
+            <button type="button" data-toggle="wire" aria-pressed="false">Wireframe</button>
+            <button type="button" data-toggle="spin" aria-pressed="false">Auto-rotate</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPETITIONS -->
+  <section class="section competitions" id="competitions" aria-labelledby="comp-title">
+    <div class="wrap">
+      <div class="section-head" data-reveal="">
+        <p class="eyebrow">Competitions</p>
+        <h2 id="comp-title">Results under a clock</h2>
+      </div>
+      <ul class="comp-list" id="comp-list"><li>
+      <h3><a href="#case-pokerbots">IIT PokerBots</a></h3>
+      <span class="res">Runner-up · ₹60,000</span>
+      <p>Perfect score in the Jane Street-sponsored finals; 500+ teams.</p>
+      <a class="go" href="#case-pokerbots" aria-label="Open the IIT PokerBots case study">→</a>
+    </li><li>
+      <h3>IMC Prosperity 4</h3>
+      <span class="res">Rank 8 in India · Phase 1</span>
+      <p>Manual and algorithmic trading rounds; Python signal-processing scripts improved profit by about 25%.</p>
+      <span></span>
+    </li><li>
+      <h3><a href="#case-aeromodelling">Boeing National Aeromodelling</a></h3>
+      <span class="res">National competitor</span>
+      <p>Payload-drop aircraft at 1.6× thrust-to-weight.</p>
+      <a class="go" href="#case-aeromodelling" aria-label="Open the Boeing National Aeromodelling case study">→</a>
+    </li><li>
+      <h3>Shaastra Aerial Robotics</h3>
+      <span class="res">Round 2</span>
+      <p>Designed and flew 2 fully autonomous drones in a one-week sprint, with a custom ArduPilot geofence.</p>
+      <span></span>
+    </li><li>
+      <h3>Signal Quest</h3>
+      <span class="res">Finalist · top 15</span>
+      <p>From 200+ participants; built and tuned a low-noise signal-processing circuit in the finals.</p>
+      <span></span>
+    </li></ul>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section skills" id="skills" aria-labelledby="skills-title">
+    <div class="wrap skills__grid">
+      <div class="section-head" data-reveal="">
+        <p class="eyebrow">Skills</p>
+        <h2 id="skills-title">Tools, tied to where I used them</h2>
+        <p class="section-sub">Linked tags open the project where that tool did real work.</p>
+      </div>
+      <div class="skills__groups" id="skills-groups"><div class="sk-group">
+      <h3>Embedded systems &amp; avionics</h3>
+      <ul class="tags"><li><a class="tag" href="#case-abhyuday" title="Used in: Team Abhyuday">STM32</a></li><li><a class="tag" href="#case-abhyuday" title="Used in: Team Abhyuday">KiCad</a></li><li><a class="tag" href="#case-abhyuday" title="Used in: Team Abhyuday">4-layer PCB design</a></li><li><a class="tag" href="#case-abhyuday" title="Used in: Team Abhyuday">Embedded C</a></li><li><a class="tag" href="#case-abhyuday" title="Used in: Team Abhyuday">LoRa telemetry</a></li><li><a class="tag" href="#case-abhyuday" title="Used in: Team Abhyuday">Battery management</a></li><li><a class="tag" href="#case-abhyuday" title="Used in: Team Abhyuday">ANSYS HFSS</a></li><li><a class="tag" href="#case-attitude" title="Used in: Attitude Estimation">Arduino</a></li><li><span class="tag">ExpressLRS</span></li><li><span class="tag">MAVLink</span></li></ul>
+    </div><div class="sk-group">
+      <h3>UAVs, autonomy &amp; vision</h3>
+      <ul class="tags"><li><a class="tag" href="#case-icarus" title="Used in: Project Icarus Prime">ArduPilot</a></li><li><a class="tag" href="#case-icarus" title="Used in: Project Icarus Prime">YOLOv11</a></li><li><a class="tag" href="#case-valkron" title="Used in: Valkron Dynamics">ROS2</a></li><li><a class="tag" href="#case-valkron" title="Used in: Valkron Dynamics">PID guidance</a></li><li><span class="tag">Pixhawk</span></li></ul>
+    </div><div class="sk-group">
+      <h3>Aerodynamics &amp; simulation</h3>
+      <ul class="tags"><li><a class="tag" href="#case-lat" title="Used in: LAT Aerospace · Inter IIT">Python aero models</a></li><li><a class="tag" href="#case-valkron" title="Used in: Valkron Dynamics">XFOIL</a></li><li><a class="tag" href="#case-attitude" title="Used in: Attitude Estimation">MATLAB</a></li><li><span class="tag">Simulink</span></li><li><span class="tag">Ansys CFD</span></li></ul>
+    </div><div class="sk-group">
+      <h3>CAD &amp; manufacturing</h3>
+      <ul class="tags"><li><a class="tag" href="#case-aeromodelling" title="Used in: Boeing National Aeromodelling">Fusion 360</a></li><li><a class="tag" href="#case-aeromodelling" title="Used in: Boeing National Aeromodelling">CNC-machined balsa</a></li><li><span class="tag">AutoCAD</span></li></ul>
+    </div><div class="sk-group">
+      <h3>Programming &amp; data</h3>
+      <ul class="tags"><li><a class="tag" href="#case-lat" title="Used in: LAT Aerospace · Inter IIT">Python</a></li><li><a class="tag" href="#case-dpca" title="Used in: Dynamic PCA Paper">Statistical process monitoring</a></li><li><a class="tag" href="#case-pokerbots" title="Used in: IIT PokerBots">Monte Carlo methods</a></li><li><span class="tag">C++</span></li><li><span class="tag">Git &amp; GitHub</span></li><li><span class="tag">LaTeX</span></li></ul>
+    </div></div>
+    </div>
+  </section>
+
+  <!-- BEYOND -->
+  <section class="section beyond" id="beyond" aria-labelledby="beyond-title">
+    <div class="wrap">
+      <div class="section-head" data-reveal="">
+        <p class="eyebrow">Beyond engineering</p>
+        <h2 id="beyond-title">Court time and community work</h2>
+      </div>
+      <div class="beyond__grid" id="beyond-grid"><article class="b-item">
+      <div class="b-item__media"><img src="assets/img/tennis.webp" srcset="assets/img/tennis.webp 467w" sizes="(max-width: 520px) 100vw, (max-width: 1000px) 50vw, 25vw" width="467" height="613" alt="Tennis" loading="lazy" decoding="async"></div>
+      <h3>Tennis</h3><p>AITA-ranked, 6+ years competitive; top 10% at TopSpin Tennis Academy, Bangalore. Peak UTR 7+, 3+ UTR tournament wins, 4+ TNTA state-level match wins, Inter-Hostel Gold (2025).</p>
+    </article><article class="b-item">
+      <div class="b-item__media"><img src="assets/img/bball.webp" srcset="assets/img/bball.webp 721w" sizes="(max-width: 520px) 100vw, (max-width: 1000px) 50vw, 25vw" width="721" height="1568" alt="Basketball" loading="lazy" decoding="async"></div>
+      <h3>Basketball</h3><p>IIT Madras Schroeters Gold Medal (2026) after a 2025 semifinal; Bronze as Vice-Captain in the Inter-Department League.</p>
+    </article><article class="b-item">
+      <div class="b-item__media"><img src="assets/img/uzhavu-sm.webp" srcset="assets/img/uzhavu-sm.webp 900w, assets/img/uzhavu.webp 1129w" sizes="(max-width: 520px) 100vw, (max-width: 1000px) 50vw, 25vw" width="900" height="1275" alt="Uzhavu · Shaastra" loading="lazy" decoding="async"></div>
+      <h3>Uzhavu · Shaastra</h3><p>Shaastra’s sustainable-agriculture campaign: 4,000+ lives reached, ₹6L+ raised from 7+ sponsors, and a 5K awareness run with 500+ runners.</p>
+    </article><article class="b-item">
+      <div class="b-item__media b-item__media--text" aria-hidden="true"><b>1,500</b><span>Mock-test registrations</span></div>
+      <h3>Tensors · JEE mentorship</h3><p>Ran a national JEE mock test with 1,500 registrations to fund preparation for underprivileged aspirants; wrote original JEE Advanced papers; partnered with 10+ schools reaching 300 students.</p>
+    </article></div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section education" id="education" aria-labelledby="edu-title">
+    <div class="wrap edu__grid">
+      <div class="section-head" data-reveal="">
+        <p class="eyebrow">Education</p>
+        <h2 id="edu-title">Indian Institute of Technology Madras</h2>
+        <p class="section-sub">B.Tech, Chemical Engineering · 2024 – 2028 · CGPA 7.77 / 10</p>
+      </div>
+      <dl class="edu__list" data-reveal="">
+        <div><dt>JEE Advanced 2024</dt><dd>AIR 3861 <span>of 1.8 lakh+ qualified</span></dd></div>
+        <div><dt>JEE Main 2024</dt><dd>AIR 3723 <span>99.78 percentile, 16 lakh+ candidates</span></dd></div>
+        <div><dt>BITSAT</dt><dd>328 / 390 <span>top 0.05%</span></dd></div>
+        <div><dt>Class XII · CBSE</dt><dd>91.8% <span>Delhi Public School, Bangalore South</span></dd></div>
+        <div><dt>Class X · CBSE</dt><dd>97.8% <span>Delhi Public School, Bangalore South</span></dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact" aria-labelledby="contact-title">
+    <div class="wrap contact__inner">
+      <p class="eyebrow" data-reveal="">Contact</p>
+      <h2 class="contact__title" id="contact-title" data-reveal="">Building flight hardware?<br>I’d like to help.</h2>
+      <p class="contact__sub" data-reveal="">Open to aerospace, avionics and aerial-robotics internships for Spring and Summer 2027, and to research collaborations.</p>
+      <div class="contact__rows" data-reveal="">
+        <div class="contact__row">
+          <span class="contact__label">Email</span>
+          <a class="contact__value" id="email-link" href="mailto:sparshbandi@gmail.com">sparshbandi@gmail.com</a>
+          <button class="btn btn--small" type="button" data-copy="sparshbandi@gmail.com">Copy</button>
+        </div>
+        <div class="contact__row">
+          <span class="contact__label">LinkedIn</span>
+          <a class="contact__value" href="https://www.linkedin.com/in/sparsh-bandi-376046320/" target="_blank" rel="noopener">linkedin.com/in/sparsh-bandi-376046320</a>
+        </div>
+        <div class="contact__row">
+          <span class="contact__label">GitHub</span>
+          <a class="contact__value" href="https://github.com/Sparsh819" target="_blank" rel="noopener">github.com/Sparsh819</a>
+        </div>
+        <div class="contact__row">
+          <span class="contact__label">Resume</span>
+          <button class="contact__value link-btn" type="button" data-resume="">View the 2-page resume</button>
+          <a class="btn btn--small" href="assets/docs/Sparsh_Bandi_Resume.pdf" target="_blank" rel="noopener">PDF</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- CASE STUDY VIEW (rendered from data.js, routed by #case-<id>) -->
+<article class="case" id="case-view" hidden="" aria-live="polite"></article>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <p>© 2026 Sparsh Bandi · Built with HTML, CSS and JavaScript</p>
+    <ul>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="https://github.com/Sparsh819" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/sparsh-bandi-376046320/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="#top">Back to top ↑</a></li>
+    </ul>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<dialog class="lightbox" id="lightbox" aria-label="Image viewer">
+  <div class="lightbox__top">
+    <span class="lightbox__count" id="lb-count"></span>
+    <div class="lightbox__actions">
+      <button type="button" class="btn btn--small" id="lb-zoom" aria-pressed="false">Actual size</button>
+      <button type="button" class="btn btn--small" id="lb-close" aria-label="Close image viewer">Close <kbd>Esc</kbd></button>
+    </div>
+  </div>
+  <div class="lightbox__stage" id="lb-stage">
+    <img id="lb-img" alt="">
+  </div>
+  <div class="lightbox__bottom">
+    <button type="button" class="lb-nav" id="lb-prev" aria-label="Previous image">←</button>
+    <p class="lightbox__caption" id="lb-caption"></p>
+    <button type="button" class="lb-nav" id="lb-next" aria-label="Next image">→</button>
+  </div>
+</dialog>
+
+<!-- Resume viewer -->
+<dialog class="lightbox resume" id="resume" aria-label="Resume">
+  <div class="lightbox__top">
+    <span class="lightbox__count">Resume · 2 pages</span>
+    <div class="lightbox__actions">
+      <a class="btn btn--small" href="assets/docs/Sparsh_Bandi_Resume.pdf" target="_blank" rel="noopener">Open PDF</a>
+      <button type="button" class="btn btn--small" data-close="">Close <kbd>Esc</kbd></button>
+    </div>
+  </div>
+  <div class="resume__pages">
+    <img src="assets/docs/resume-p1.webp" width="1656" height="2339" alt="Resume page 1: education, skills, experience at Valkron Dynamics and Team Abhyuday, research projects" loading="lazy">
+    <img src="assets/docs/resume-p2.webp" width="1656" height="2339" alt="Resume page 2: competitions, positions of responsibility and extracurriculars" loading="lazy">
+  </div>
+</dialog>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/viewer.js" defer=""></script>
+
+
+</body></html>
